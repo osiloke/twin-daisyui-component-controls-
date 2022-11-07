@@ -1,0 +1,29 @@
+---
+title: Button Story
+---
+
+import { VariantButton } from "../components/VariantButton";
+import {
+  Playground,
+  Story,
+  PropsTable,
+  ComponentSource,
+} from "@component-controls/blocks";
+
+# My first doc story
+
+## Component source
+
+<ComponentSource of="." title="Component source" />
+
+## Playground
+
+<Playground description="VariantButton story">
+  <Story name="simple" component={VariantButton}>
+    {() => <VariantButton text="click me" />}
+  </Story>
+</Playground>
+
+## Component Props
+
+<PropsTable of="." visibility="controls" />
